@@ -36,7 +36,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-		background-color: white;
+		background-color: #ff77a8;
 	}
 
 	.corner {
@@ -62,7 +62,11 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgb(255, 255, 255);
+		--background: #14182e;
+	}
+
+	nav li a {
+		color: white;
 	}
 
 	svg {

@@ -8,12 +8,12 @@
 	<meta name="description" content="Portfolio Website" />
 </svelte:head>
 
-<section class="flex flex-col gap-5">
+<section id="info" class="flex flex-col gap-5">
 	<article id="banner" class="text-center mt-10">
 		<img alt="me" src={logo} />
 
 		<h1>
-			Gabriel Spibola<br />Portfolio
+			Gabriel Spinola<br />Portfolio
 		</h1>
 
 		<h2>
@@ -23,8 +23,11 @@
 
 	<article id="flex flex-row">
 		<div id="about-me">
-			<h2>Hi!</h2>
-			<p>Systems Developer focused on back-end, experienced in PHP, HTML, CSS, JS, Next.js, and TypeScript for complete Web Systems. Proficient in game development using Unity and C#. Communicative and well-versed in Design Patterns, Clean Code, Restful, TDD, Git, Containers, and SOLID Principles.</p>
+			<h2>Hi !!</h2>
+			<br>
+			<!-- <hr> -->
+			
+			<p>I'm a systems Developer focused on back-end, experienced in Go, HTML, Next.js, and TypeScript for complete Web Systems. Proficient in game development using Unity, C# and C++. Communicative and well-versed in Design Patterns, Clean Code, Restful, TDD, Git, Containers, and SOLID Principles.</p>
 		</div>
 
 		<div id="about-me-img" class="flex-1">
@@ -57,7 +60,24 @@
 	}
 
 	h1 {
-		font-size: xx-large;
+		font-size: 42px;
 		width: 100%;
+	}
+
+	h2 {
+		font-size: 22px;
+		font-weight: bold;
+		color: #ff77a8;
+	}
+
+	div#about-me > p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	section#info {
+		background-color: #11132273;
+		border-radius: 12px;
+		padding: 1vw;
 	}
 </style>

@@ -21,6 +21,12 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		background-color: #14182E;
+		background-image: url(../lib/images/background_sky.png);
+		background-size: contain;
+		width: 100%;
+		height: 100%;
+		background-position: 50% 50%;
 	}
 
 	main {
