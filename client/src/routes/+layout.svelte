@@ -10,10 +10,6 @@
 	<main>
 		<slot />
 	</main>
-
-	<footer>
-		<p>Footer</p>
-	</footer>
 </div>
 
 <style>

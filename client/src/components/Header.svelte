@@ -2,6 +2,10 @@
 	import { page } from '$app/stores';
 	
 	import github from '$lib/images/github.svg';
+	import itchio from '$lib/images/itch-io.svg'
+	import twitter from '$lib/images/twitter.svg';
+	import gmail from '$lib/images/envelope-solid.svg';
+	import linkedin from '$lib/images/linkedin.svg'
 </script>
 
 <header>
@@ -26,8 +30,24 @@
 	</nav>
 
 	<div class="corner align-middle mt-6 mr-8">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/Gabriel-Spinola">
 			<img src={github} alt="GitHub" />
+		</a>
+
+		<a href="https://gabriel-spinola.itch.io">
+			<img id="itch-icon" src={itchio} alt="itch.io">
+		</a>
+
+		<a href="mailto:gabrielspinola77@gmail.com">
+			<img id="itch-icon" src={gmail} alt="gmail">
+		</a>
+		
+		<a href="https://twitter.com/gabrielsevin7">
+			<img id="itch-icon" src={twitter} alt="twitter">
+		</a>
+
+		<a href="https://www.linkedin.com/in/gabriel-spinola-b64b5b273/">
+			<img id="itch-icon" src={linkedin} alt="twitter">
 		</a>
 	</div>
 </header>
@@ -37,11 +57,20 @@
 		display: flex;
 		justify-content: space-between;
 		background-color: #ff77a8;
+		border-color: #ffec27;
+		border-width: 1px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
 	}
 
 	.corner {
-		width: 3em;
+		width: 10em;
 		height: 3em;
+		display: flex;
+		flex-direction: row;
+		gap: 1vw;
+		margin-right: 8vw;
 	}
 
 	.corner a {
@@ -57,6 +86,12 @@
 		width: 2em;
 		height: 2em;
 		object-fit: contain;
+		margin: 1vw;
+	}
+
+	#itch-icon {
+		width: 80%;
+		height: 80%;
 	}
 
 	nav {
